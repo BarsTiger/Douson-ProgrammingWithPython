@@ -20,6 +20,11 @@ print("Вывод объекта crit1 на экран: ")
 print(crit1)
 print("Непосредственный доступ к атрибуту crit1.name: ")
 print(crit1.name)
+print("\n")
 
+print("Вывод объекта crit2 на экран: ")
+print(crit2)
+print("Непосредственный доступ к атрибуту crit2.name: ")
+print(crit2.name)
 
 input("\n\nНажмите Ent, чтобы выйти")
