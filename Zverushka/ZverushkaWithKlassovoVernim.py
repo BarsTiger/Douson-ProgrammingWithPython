@@ -1,16 +1,23 @@
 class Critter(object):
+    total = 0
+
+    @staticmethod
+
+    def status():
+        print("\nВсего зверюшек сейчас", Critter.total)
+
     def __init__(self, name):
         print("Появилась на свет новая зверюшка!")
         self.name = name
+        Critter.total += 1
 
 
-    def talk(self):
-        print("Привет. Я - зверюшка - экземпляр класса Critter.")
+print("Нахожу значение атрибута клсса Critter.total:", end= " ")
+
+
 
 crit1 = Critter("Барсик")
-crit1.talk()
 crit2 = Critter("Шарик")
-crit2.talk()
 
 print("Вывод объекта crit1 на экран: ")
 print(crit1)
