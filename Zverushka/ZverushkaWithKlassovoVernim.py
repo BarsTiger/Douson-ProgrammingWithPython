@@ -1,0 +1,26 @@
+class Critter(object):
+    def __init__(self, name):
+        print("Появилась на свет новая зверюшка!")
+        self.name = name
+
+
+    def talk(self):
+        print("Привет. Я - зверюшка - экземпляр класса Critter.")
+
+crit1 = Critter("Барсик")
+crit1.talk()
+crit2 = Critter("Шарик")
+crit2.talk()
+
+print("Вывод объекта crit1 на экран: ")
+print(crit1)
+print("Непосредственный доступ к атрибуту crit1.name: ")
+print(crit1.name)
+print("\n")
+
+print("Вывод объекта crit2 на экран: ")
+print(crit2)
+print("Непосредственный доступ к атрибуту crit2.name: ")
+print(crit2.name)
+
+input("\n\nНажмите Ent, чтобы выйти")
