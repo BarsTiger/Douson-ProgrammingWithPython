@@ -13,21 +13,18 @@ class Critter(object):
 
 
 print("Нахожу значение атрибута клсса Critter.total:", end= " ")
+print(Critter.total)
+print("\nСоздаю зверюшек.")
 
 
+crit1 = Critter("Звеюшка 1")
+crit2 = Critter("Звеюшка 2")
+crit3 = Critter("Звеюшка 3")
+crit4 = Critter("Звеюшка 4")
 
-crit1 = Critter("Барсик")
-crit2 = Critter("Шарик")
+Critter.status()
 
-print("Вывод объекта crit1 на экран: ")
-print(crit1)
-print("Непосредственный доступ к атрибуту crit1.name: ")
-print(crit1.name)
-print("\n")
-
-print("Вывод объекта crit2 на экран: ")
-print(crit2)
-print("Непосредственный доступ к атрибуту crit2.name: ")
-print(crit2.name)
+print("\nОбращаюсь к атрибуту класса через объект:", end= " ")
+print(crit1.total)
 
 input("\n\nНажмите Ent, чтобы выйти")
